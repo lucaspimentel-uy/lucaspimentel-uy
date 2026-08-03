@@ -14,6 +14,25 @@ contexto hasta revisar y validar críticamente el código generado antes de inte
 
 ## Proyectos destacados
 
+### Siniestros Viales UY/BR/ES — Ecosistema de Datos Híbrido
+Pipeline ETL y Data Warehouse híbrido que integra, normaliza y enriquece 9.266.912 registros
+de siniestralidad vial de Uruguay (UNASEV), Brasil (RENAEST) y España (DGT) para el período
+2018–2025, homologando vocabularios y unidades entre tres fuentes oficiales heterogéneas.
+Los datos se sirven en un dashboard analítico que responde diez preguntas de negocio (Q1–Q10),
+con enriquecimiento climático vía Open-Meteo e indicadores macro de la OMS. Proyecto de equipo
+para UTEC-LIDIA junto a Víctor Uría y Boris Furtado.
+
+- **Rol:** desarrollo dirigido con Claude Code sobre documentación viva (CLAUDE.md como
+  contrato técnico, handoffs sesión a sesión); diseño del modelo dimensional, refactor de
+  idempotencia del ETL y construcción del dashboard.
+- **Stack:** Python (pandas, psycopg2, pymongo, pyproj), PostgreSQL 15 (esquema snowflake 3FN,
+  replicación WAL Primary/Standby), MongoDB 6 (landing zone + colección analítica con GeoJSON
+  e índice 2dsphere, Replica Set), Streamlit + Plotly, Docker Compose.
+- **Destacados técnicos:** idempotencia por clave natural (UPSERT, no borrar-y-recargar),
+  CDC diferenciado por fuente (fecha+hora / hash MD5 / snapshot mensual), carga por chunks
+  para el volumen de Brasil (~89% del total) y tests de calidad sobre las 4 dimensiones DAMA.
+- **Repositorio:** [`siniestros-viales-etl-dw`](https://github.com/lucaspimentel-uy/siniestros-viales-etl-dw)
+
 ### Vivero QC — PWA de Control de Calidad de Vivero
 PWA para digitalizar el control de calidad de plantines: el registrador carga datos desde el
 celular (con o sin señal), el supervisor revisa y aprueba, y la planilla madre se genera
@@ -45,5 +64,5 @@ enfocado en la Línea 1: Historia Clínica Electrónica, protocolo IDEA y analí
 
 ## Habilidades técnicas
 
-Python, SQL, PostgreSQL, Git, Claude Code / LLMs, Next.js, TypeScript, Supabase,
-Selenium IDE, metodologías ágiles.
+Python (pandas), SQL, PostgreSQL, MongoDB, ETL / Data Warehousing, Docker, Streamlit,
+Git, Claude Code / LLMs, Next.js, TypeScript, Supabase, Selenium IDE, metodologías ágiles.

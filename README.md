@@ -8,8 +8,8 @@ contexto hasta revisar y validar críticamente el código generado antes de inte
 - Python, SQL/PostgreSQL, Git, Claude Code / LLMs para desarrollo asistido
 - Formación previa en Testing de Software (CES) — metodologías ágiles, Selenium IDE
 - Rivera, Uruguay
-- Correo personal: pimentellucas941@gmail.com · [LinkedIn](https://linkedin.com/in/lucaspimentel)
-- Correo de trabajo: lucas.pime941@gmail.com
+- Correo personal: pimentellucas941@gmail.com 
+- Correo de trabajo: lucas.pime941@gmail.com · [LinkedIn](https://linkedin.com/in/lucaspimentel)
 ---
 
 ## Proyectos destacados

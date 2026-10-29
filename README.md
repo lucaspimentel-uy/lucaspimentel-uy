@@ -2,11 +2,11 @@
 
 Estudiante de la **Licenciatura en Ingeniería de Datos e Inteligencia Artificial** en UTEC (LIDIA, Uruguay). Trabajo en proyectos de **machine learning, IA generativa e ingeniería de datos**, en equipo y con flujos de desarrollo asistido por agentes de IA (Claude Code): escribo el contexto y los prompts, reviso críticamente lo que se genera y decido qué se integra.
 
-📫 lucas.pime941@gmail.com · [LinkedIn](https://www.linkedin.com/in/lucas-pimentel-barreto-939161212)
+ lucas.pime941@gmail.com · [LinkedIn](https://www.linkedin.com/in/lucas-pimentel-barreto-939161212)
 
 ---
 
-## 🤖 Machine Learning e IA
+## Machine Learning e IA
 
 ### Predicción de siniestros viales en Montevideo — Proyecto de Aprendizaje Automático
 Pronóstico a 7 días de la cantidad de siniestros por municipio y día, a partir de la serie histórica de UNASEV (2021–2025). Se compararon GLM Poisson, binomial negativa y XGBoost contra modelos de referencia con **validación temporal en 47 cortes semanales** y reentrenamiento en cada corte. La solución elegida (GLM Poisson con calendario y feriados) superó a la referencia en los 8 municipios y se fijó **antes** de mirar el conjunto de test. Incluye intervalos de predicción del 80 % y 95 %, entrenamiento reproducido en el servidor institucional y una pestaña de predicción integrada en un dashboard en Streamlit.
@@ -28,7 +28,7 @@ Asistente conversacional basado en LLMs que orienta a familias y las deriva al s
 
 ---
 
-## 🗄️ Ingeniería de datos y desarrollo
+## Ingeniería de datos y desarrollo
 
 ### Siniestros viales UY/BR/ES — Pipeline ETL y Data Warehouse híbrido
 Integra y normaliza **9,2 millones de registros** de siniestralidad de Uruguay, Brasil y España (2018–2025) con enriquecimiento climático, y los sirve en un dashboard que responde diez preguntas de negocio. ETL idempotente con carga incremental, CDC por fuente y tests de calidad de datos.
@@ -55,7 +55,7 @@ Aplicación web progresiva para digitalizar el control de calidad de plantines f
 
 ---
 
-## 🛠️ Tecnologías
+## Tecnologías
 
 | Área | Herramientas |
 |---|---|
